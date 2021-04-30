@@ -29,8 +29,8 @@ class MainController extends Controller
         //dd($user->isAdmin());
         //$produits = Produit::orderByDesc('id')->first();
 
-        // $produits = Produit::all();
+        $produits = Produit::orderByDesc('id')->take(9)->get();
 
-        return view('welcome');
+        return view('welcome', ['produits' => $produits]);
     }
 }
