@@ -15,13 +15,13 @@ class MainController extends Controller
 
         //$collect1 = collect(["orange" , "Banane", "mangue"]);
 
-        $produits = Produit::all();
+        // $produits = Produit::all();
 
         //dd($collect2->sortByDesc('prix'));
         //dd($produits);
-        $produitsFiltres = $produits->filter(function ($produit, $key) {
-            return $produit->prix > 100000 && $produit->prix < 500000;
-        });
+        // $produitsFiltres = $produits->filter(function ($produit, $key) {
+        //     return $produit->prix > 100000 && $produit->prix < 500000;
+        // });
         // dd($produitsFiltres);
 
         // dd($collect1)->orderBy();
